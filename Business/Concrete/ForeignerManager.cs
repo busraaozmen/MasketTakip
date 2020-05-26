@@ -6,27 +6,21 @@ using System.Text;
 
 namespace Business.Concrete
 {
-    //Boş class kalmasın
-    public class PersonManager :IApplicantService
+    public class ForeignerManager : IApplicantService
     {
-        //encapsulation
         public void ApplyForMask(Person person)
         {
-
+            throw new NotImplementedException();
         }
+
+        public bool CheckPerson(Person person)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Person> GetList()
         {
-            return null;
+            throw new NotImplementedException();
         }
-
-        public bool CheckPerson(Person person)
-        {
-            return true;
-        }
-        public bool CheckPerson(Person person)
-        {
-          
-        }
-
     }
 }

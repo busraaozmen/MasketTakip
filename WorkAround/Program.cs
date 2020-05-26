@@ -1,4 +1,5 @@
-﻿using Entities.Concrete;
+﻿using Business.Concrete;
+using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 
@@ -75,6 +76,7 @@ namespace WorkAround
                 Console.WriteLine(sehir);
             }
 
+            //MyList
             List<string> yeniSehirler1 = new List<string> { "Ankara 1", "istanbul 1", "İzmir 1" };
             yeniSehirler1.Add("Adana 1");
             foreach (var sehir in yeniSehirler1)
@@ -82,6 +84,11 @@ namespace WorkAround
                 Console.WriteLine(sehir);
             }
 
+
+            PttManager pttManager = new PttManager(new ForeignerManager());
+            pttManager.GiveMask(person1);
+
+             
 
 
 
