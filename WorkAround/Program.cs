@@ -67,6 +67,9 @@ namespace WorkAround
 
             Person person1 = new Person();
             person1.FirstName = "Büşra";
+            person1.LastName = "Özmen";
+            person1.DateOfBirthYear = 1994;
+            person1.NationalIdentity = 123;
 
             Person person2 = new Person();
             person2.FirstName = "HiraNur";
@@ -85,7 +88,7 @@ namespace WorkAround
             }
 
 
-            PttManager pttManager = new PttManager(new ForeignerManager());
+            PttManager pttManager = new PttManager(new PersonManager());
             pttManager.GiveMask(person1);
 
              
